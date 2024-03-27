@@ -86,8 +86,8 @@ CREATE TABLE `users`
     `consumer_id`      BIGINT   NOT NULL,
 
     FOREIGN KEY (`grade_id`) REFERENCES `grades` (`grade_id`),
-    FOREIGN KEY (`auth_id`) REFERENCES `auth` (`auth_id`),
-    FOREIGN KEY (`consumer_id`) REFERENCES `consumer` (`consumer_id`)
+    FOREIGN KEY (`auth_id`) REFERENCES `auths` (`auth_id`),
+    FOREIGN KEY (`consumer_id`) REFERENCES `consumers` (`consumer_id`)
 );
 
 CREATE TABLE `wrappers`
