@@ -1,3 +1,5 @@
+USE staff99_bookstore;
+
 DROP TABLE IF EXISTS `review_images`;
 DROP TABLE IF EXISTS `wrapper_images`;
 DROP TABLE IF EXISTS `book_images`;
