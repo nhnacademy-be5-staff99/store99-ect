@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `books`
     `book_date`          DATETIME     NOT NULL,
     `book_price`         INT          NOT NULL,
     `book_sale_price`    INT          NOT NULL,
-    `book_pack`          TINYINT      NOT NULL,
+    `book_is_packed`     BOOLEAN      NOT NULL,
     `book_thumbnail_url` VARCHAR(255) NULL,
     `book_view_count`    INT          NOT NULL DEFAULT 0,
     `book_stock`         INT          NOT NULL DEFAULT 0,
@@ -78,7 +78,7 @@ CREATE TABLE `users`
     `user_birthdate`   DATE     NOT NULL,
     `grade_id`         BIGINT   NOT NULL,
     `user_login_at`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `user_is_inactive` TINYINT  NOT NULL DEFAULT 0,
+    `user_is_inactive` BOOLEAN  NOT NULL DEFAULT 0,
     `created_at`       DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `deleted_at`       DATETIME NULL,
     `auth_id`          BIGINT   NOT NULL,
@@ -247,10 +247,10 @@ CREATE TABLE `carts`
 
 CREATE TABLE `files`
 (
-    `file_id`   BIGINT       NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `file_name` VARCHAR(255) NOT NULL COMMENT '확장자 포함',
-    `file_url`  VARCHAR(255) NOT NULL,
-    `file_type` VARCHAR(10)  NOT NULL CHECK (`file_type` IN ('REVIEW', 'WRAPPER', 'BOOK')),
+    `file_id`    BIGINT       NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `file_name`  VARCHAR(255) NOT NULL COMMENT '확장자 포함',
+    `file_url`   VARCHAR(255) NOT NULL,
+    `file_type`  VARCHAR(10)  NOT NULL CHECK (`file_type` IN ('REVIEW', 'WRAPPER', 'BOOK')),
     `created_at` DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `deleted_at` DATETIME     NULL
 );
