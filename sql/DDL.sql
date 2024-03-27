@@ -1,4 +1,35 @@
-CREATE TABLE `books` if not exists 'books' (
+drop table if exists `books`;
+drop table if exists `users`;
+drop table if exists `wrappers`;
+drop table if exists `point_historys`;
+drop table if exists `point_histories`;
+drop table if exists `grades`;
+drop table if exists `categories`;
+drop table if exists `book_categories`;
+drop table if exists `tags`;
+drop table if exists `book_tag`;
+drop table if exists `order_books`;
+drop table if exists `orders`;
+drop table if exists `addresses`;
+drop table if exists `payments`;
+drop table if exists `reviewes`;
+drop table if exists `likes`;
+drop table if exists `authors`;
+drop table if exists `book_author`;
+drop table if exists `user_coupons`;
+drop table if exists `carts`;
+drop table if exists `book_coupons`;
+drop table if exists `consumer`;
+drop table if exists `fixed_term_coupons`;
+drop table if exists `category_coupons`;
+drop table if exists `book_images`;
+drop table if exists `wrapper_images`;
+drop table if exists `review_images`;
+drop table if exists `auth`;
+drop table if exists `coupons`;
+drop table if exists `files`;
+
+CREATE TABLE if not exists `books` (
                          `book_id`	BIGINT	NOT NULL	COMMENT 'AUTO_INCREMENT',
                          `book_isbn13`	VARCHAR(17)	NULL,
                          `book_isbn11`	VARCHAR(15)	NULL,
@@ -40,7 +71,7 @@ CREATE TABLE `wrappers` (
                             `warpper_cost`	INT	NULL
 );
 
-CREATE TABLE `point_historys` (
+CREATE TABLE `point_histories` (
                                   `point_history_id`	BIGINT	NOT NULL	COMMENT 'AUTO_INCREMENT',
                                   `point_history_value`	INT	NOT NULL,
                                   `point_history_desc`	VARCHAR(20)	NOT NULL	COMMENT 'purchase, cashback, refund, cancel, review',
@@ -63,7 +94,7 @@ CREATE TABLE `categories` (
                               `deleted_at`	DATETIME	NULL
 );
 
-CREATE TABLE `book_categorie` (
+CREATE TABLE `book_categories` (
                                   `book_category_id`	BIGINT	NOT NULL	COMMENT 'AUTO_INCREMENT',
                                   `book_id`	BIGINT	NOT NULL	COMMENT 'AUTO_INCREMENT',
                                   `category_id`	BIGINT	NOT NULL	COMMENT 'AUTO_INCREMENT'
@@ -232,13 +263,13 @@ ALTER TABLE `users` ADD CONSTRAINT `PK_users` PRIMARY KEY (`user_id`);
 
 ALTER TABLE `wrappers` ADD CONSTRAINT `PK_wrappers` PRIMARY KEY (`wrapper_id`);
 
-ALTER TABLE `point_history` ADD CONSTRAINT `PK_point_history` PRIMARY KEY (`point_history_id`);
+ALTER TABLE `point_histories` ADD CONSTRAINT `PK_point_history` PRIMARY KEY (`point_history_id`);
 
 ALTER TABLE `grades` ADD CONSTRAINT `PK_grades` PRIMARY KEY (`grade_id`);
 
 ALTER TABLE `categories` ADD CONSTRAINT `PK_categories` PRIMARY KEY (`category_id`);
 
-ALTER TABLE `book_category` ADD CONSTRAINT `PK_book_category` PRIMARY KEY (`book_category_id`);
+ALTER TABLE `book_categories` ADD CONSTRAINT `PK_book_category` PRIMARY KEY (`book_category_id`);
 
 ALTER TABLE `tags` ADD CONSTRAINT `PK_tags` PRIMARY KEY (`tag_id`);
 
@@ -250,9 +281,9 @@ ALTER TABLE `orders` ADD CONSTRAINT `PK_orders` PRIMARY KEY (`order_id`);
 
 ALTER TABLE `addresses` ADD CONSTRAINT `PK_addresses` PRIMARY KEY (`address_id`);
 
-ALTER TABLE `payments` ADD CONSTRAINT `PK_payments` PRIMARY KEY (`payment_id`);
+-- ALTER TABLE `payments` ADD CONSTRAINT `PK_payments` PRIMARY KEY (`payment_id`);
 
-ALTER TABLE `reviews` ADD CONSTRAINT `PK_reviews` PRIMARY KEY (`review_id`);
+ALTER TABLE `reviewes` ADD CONSTRAINT `PK_reviews` PRIMARY KEY (`review_id`);
 
 ALTER TABLE `coupons` ADD CONSTRAINT `PK_coupons` PRIMARY KEY (`coupon_id`);
 
@@ -266,28 +297,28 @@ ALTER TABLE `user_coupons` ADD CONSTRAINT `PK_user_coupons` PRIMARY KEY (`user_c
 
 ALTER TABLE `carts` ADD CONSTRAINT `PK_carts` PRIMARY KEY (`cart_id`);
 
-ALTER TABLE `book_coupons` ADD CONSTRAINT `PK_book_coupons` PRIMARY KEY (`book_coupon_id`);
+ALTER TABLE `book_coupons` ADD CONSTRAINT `PK_book_coupons` PRIMARY KEY (`coupon_id`);
 
 ALTER TABLE `consumer` ADD CONSTRAINT `PK_consumer` PRIMARY KEY (`consumer_id`);
 
-ALTER TABLE `fixed_term_coupons` ADD CONSTRAINT `PK_fixed_term_coupons` PRIMARY KEY (`fixed_term_coupon_id`);
+ALTER TABLE `fixed_term_coupons` ADD CONSTRAINT `PK_fixed_term_coupons` PRIMARY KEY (`coupon_id`);
 
-ALTER TABLE `category_coupons` ADD CONSTRAINT `PK_category_coupons` PRIMARY KEY (`category_coupon_id`);
+ALTER TABLE `category_coupons` ADD CONSTRAINT `PK_category_coupons` PRIMARY KEY (`coupon_id`);
 
 ALTER TABLE `files` ADD CONSTRAINT `PK_files` PRIMARY KEY (`file_id`);
 
-ALTER TABLE `book_images` ADD CONSTRAINT `PK_book_images` PRIMARY KEY (`book_image_id`);
+ALTER TABLE `book_images` ADD CONSTRAINT `PK_book_images` PRIMARY KEY (`file_id`);
 
-ALTER TABLE `wrapper_images` ADD CONSTRAINT `PK_wrapper_images` PRIMARY KEY (`wrapper_image_id`);
+ALTER TABLE `wrapper_images` ADD CONSTRAINT `PK_wrapper_images` PRIMARY KEY (`file_id`);
 
-ALTER TABLE `review_images` ADD CONSTRAINT `PK_review_images` PRIMARY KEY (`review_image_id`);
+ALTER TABLE `review_images` ADD CONSTRAINT `PK_review_images` PRIMARY KEY (`file_id`);
 
 ALTER TABLE `auth` ADD CONSTRAINT `PK_auth` PRIMARY KEY (`auth_id`);
 
-ALTER TABLE `book_coupons` ADD CONSTRAINT `FK_book_coupons_TO_coupons` FOREIGN KEY (`book_coupon_id`)
+ALTER TABLE `book_coupons` ADD CONSTRAINT `FK_book_coupons_TO_coupons` FOREIGN KEY (`coupon_id`)
     REFERENCES `coupons` (`coupon_id`);
 
-ALTER TABLE `fixed_term_coupons` ADD CONSTRAINT `FK_fixed_term_coupons_TO_coupons` FOREIGN KEY (`fixed_term_coupon_id`)
+ALTER TABLE `fixed_term_coupons` ADD CONSTRAINT `FK_fixed_term_coupons_TO_coupons` FOREIGN KEY (`coupon_id`)
     REFERENCES `coupons` (`coupon_id`);
 
 ALTER TABLE `category_coupons` ADD CONSTRAINT `FK_coupons_TO_category_coupons_1` FOREIGN KEY (`coupon_id`)
