@@ -110,7 +110,7 @@ CREATE TABLE `categories`
 (
     `category_id`        BIGINT       NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `category_name`      VARCHAR(255) NOT NULL,
-    `category_depth`     INT          NOT NULL DEFAULT 1,
+    `category_depth`     INT          NOT NULL, DEFAULT 1,
     `parent_category_id` BIGINT       NULL,
     `deleted_at`         DATETIME     NULL,
 
