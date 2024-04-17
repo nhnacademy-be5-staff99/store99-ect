@@ -1,4 +1,4 @@
-
+SET sql_safe_updates=0;
 SET foreign_key_checks = 0;
 DELETE FROM categories; -- commit 이전 rollback 가능함
 SET foreign_key_checks = 1;
