@@ -1,3 +1,10 @@
+
+SET foreign_key_checks = 0;
+DELETE FROM categories; -- commit 이전 rollback 가능함
+SET foreign_key_checks = 1;
+
+ALTER TABLE categories AUTO_INCREMENT = 1;
+
 -- Root Category --
 INSERT INTO categories (category_name, category_depth, parent_category_id) VALUES ('국내도서', 1, NULL);
 
