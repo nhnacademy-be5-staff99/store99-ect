@@ -1,0 +1,9 @@
+insert into book_author (author_id, book_id) value(1,1);
+insert into book_author (author_id, book_id) value(2,1);
+insert into book_author (author_id, book_id) value(3,2);
+insert into book_author (author_id, book_id) value(4,3);
+insert into book_author (author_id, book_id) value(5,4);
+insert into book_author (author_id, book_id) value(6,5);
+insert into book_author (author_id, book_id) value(5,6);
+insert into book_author (author_id, book_id) value(7,7);
+insert into book_author (author_id, book_id) value(8,7);
