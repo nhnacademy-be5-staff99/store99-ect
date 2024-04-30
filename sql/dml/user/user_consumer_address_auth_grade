@@ -1,7 +1,7 @@
 SET sql_safe_updates=0;
-DELETE FROM categories;
+DELETE FROM users;
 SET sql_safe_updates=1;
-ALTER TABLE categories AUTO_INCREMENT = 1;
+ALTER TABLE users AUTO_INCREMENT = 1;
 
 -- auth
 INSERT INTO auths(auth_id, auth_name) VALUES(1, "USER");
