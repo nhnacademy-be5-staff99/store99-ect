@@ -69,7 +69,7 @@ INSERT INTO book_images (file_id, book_id, book_image_type) values
 (44,44,"DETAIL"),
 (45,45,"DETAIL"),
 (46,46,"DETAIL"),
-(47,27,"DETAIL"),
+(47,47,"DETAIL"),
 (48,48,"DETAIL"),
-(49,29,"DETAIL");
+(49,49,"DETAIL");
 INSERT INTO book_images (file_id, book_id, book_image_type) value (50,50, "DETAIL");
