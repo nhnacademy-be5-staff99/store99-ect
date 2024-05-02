@@ -9,3 +9,8 @@ INSERT INTO files(file_name, file_url,file_type) values
 ("Book8DetailImage","https://shopping-phinf.pstatic.net/main_4598028/45980281640.20240224093654.jpg","BOOK"),
 ("Book9DetailImage","https://shopping-phinf.pstatic.net/main_4375787/43757872621.20231102092116.jpg","BOOK"),
 ("Book10DetailImage","https://shopping-phinf.pstatic.net/main_4223724/42237244619.20230927071451.jpg","BOOK");
+
+
+
+INSERT INTO files(file_name, file_url,file_type) values
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK");
