@@ -12,12 +12,47 @@ INSERT INTO files(file_name, file_url,file_type) values
 
 
 
--- 8번 반복하여 40개를 추가로 넣을것. 
 INSERT INTO files(file_name, file_url,file_type) values
 ("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
 ("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
 ("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
 ("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
+("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
 ("defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK");
+
 
 -- 11번 이후의 도서의 이미지를 바꿀경우 update를 통하여 file의 url만 바꿔주도록하자.
