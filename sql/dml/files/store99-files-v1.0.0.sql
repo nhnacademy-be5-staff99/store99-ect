@@ -12,7 +12,7 @@ INSERT INTO files(file_id, file_name, file_url,file_type) values
 
 
 
-INSERT INTO files(file_name, file_url,file_type) values
+INSERT INTO files(file_id,file_name, file_url,file_type) values
 (11,"defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
 (12,"defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
 (13,"defaultImage", "https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_fcb81f74e379456b8ca0e091d351a7af/store99/detail/default.png" ,"BOOK"),
