@@ -101,7 +101,7 @@ CREATE TABLE `point_histories`
     `point_history_id`    BIGINT      NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `point_history_value` INT         NOT NULL,
     `point_history_type`  VARCHAR(20) NOT NULL CHECK (`point_history_type` IN
-                                                      ('PURCHASE', 'CASHBACK', 'REFUND', 'CANCEL', 'REVIEW')),
+                                                      ('PURCHASE', 'CASHBACK', 'REFUND', 'CANCEL', 'REVIEW', 'WELCOME')),
     `created_at`          DATETIME    NOT NULL,
     `user_id`             BIGINT      NOT NULL
 );
