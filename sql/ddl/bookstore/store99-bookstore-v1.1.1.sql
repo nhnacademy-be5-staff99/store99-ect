@@ -113,7 +113,7 @@ CREATE TABLE `point_policies`
     `policy_type`  VARCHAR(50) NOT NULL CHECK (`policy_type` IN
                                                        ('REVIEW_TEXT', 'REVIEW_PHOTO', 'WELCOME')),
     `saving_point`       BIGINT     NOT NULL,
-    `created_at`          DATETIME      NULL,
+    `created_at`          DATETIME      NULL DEFAULT CURRENT_TIMESTAMP,
     `deleted_at`           DATETIME      NULL
 );
 
