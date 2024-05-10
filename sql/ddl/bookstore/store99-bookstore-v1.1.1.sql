@@ -111,8 +111,8 @@ CREATE TABLE `point_policies`
   (
     `policy_id`    BIGINT      NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `policy_type`  VARCHAR(50) NOT NULL CHECK (`policy_type` IN
-                                                       ('REVIEW_TEXT', 'REVIEW_PHOTO', 'WELCOME')),
-    `saving_point`       BIGINT     NOT NULL,
+                                                ('REVIEW_TEXT', 'REVIEW_PHOTO', 'WELCOME')),
+    `saving_point`       INT     NOT NULL,
     `created_at`          DATETIME      NULL DEFAULT CURRENT_TIMESTAMP,
     `deleted_at`           DATETIME      NULL
 );
@@ -241,7 +241,7 @@ CREATE TABLE `authors`
     `author_id`   BIGINT       NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `author_name` VARCHAR(255) NOT NULL,
     `author_type` VARCHAR(50)  NOT NULL CHECK (`author_type` IN ('AUTHOR', 'TRANSLATOR', 'PAINTER',
-																'SUPERVISION', 'ETC'))
+								'SUPERVISION', 'ETC'))
 );
 
 CREATE TABLE `book_author`
