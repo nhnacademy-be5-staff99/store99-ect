@@ -24,6 +24,7 @@ DROP TABLE IF EXISTS `auths`;
 DROP TABLE IF EXISTS `consumers`;
 DROP TABLE IF EXISTS `grades`;
 DROP TABLE IF EXISTS `books`;
+DROP TABLE IF EXISTS `point_policies`;
 
 CREATE TABLE IF NOT EXISTS `books`
 (
@@ -110,7 +111,7 @@ CREATE TABLE `point_policies`
   (
     `policy_id`    BIGINT      NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `policy_type`  VARCHAR(50) NOT NULL CHECK (`policy_type` IN
-                                                      ('PURCHASE', 'CASHBACK', 'REFUND', 'CANCEL', 'REVIEW', 'WELCOME')),
+                                                       ('REVIEW_TEXT', 'REVIEW_PHOTO', 'WELCOME')),
     `saving_point`       BIGINT     NOT NULL,
     `created_at`          DATETIME      NULL,
     `deleted_at`           DATETIME      NULL
