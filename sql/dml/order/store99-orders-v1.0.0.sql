@@ -10,4 +10,5 @@ insert into orders
     (6,"USER", CURRENT_TIMESTAMP, "tester","01012345678","there", "here", "12345",15000,1),
     (7,"USER", CURRENT_TIMESTAMP, "tester","01012345678","there", "here", "12345",16000,1),
     (8,"USER", CURRENT_TIMESTAMP, "tester","01012345678","there", "here", "12345",17000,1),
-    (9,"USER", CURRENT_TIMESTAMP, "tester","01012345678","there", "here", "12345",18000,1);
+    (9,"USER", CURRENT_TIMESTAMP, "tester","01012345678","there", "here", "12345",18000,1),
+    (10,"USER", CURRENT_TIMESTAMP, "tester","01012345678","there", "here", "12345",19000,1);
