@@ -19,6 +19,7 @@ TRUNCATE TABLE order_book;
 TRUNCATE TABLE orders;
 TRUNCATE TABLE payments;
 TRUNCATE TABLE point_histories;
+TRUNCATE TABLE point_policies;
 TRUNCATE TABLE review_images;
 TRUNCATE TABLE reviews;
 TRUNCATE TABLE tags;
@@ -61,6 +62,8 @@ ALTER TABLE orders
 ALTER TABLE payments
     AUTO_INCREMENT = 1;
 ALTER TABLE point_histories
+    AUTO_INCREMENT = 1;
+ALTER TABLE point_policies
     AUTO_INCREMENT = 1;
 ALTER TABLE review_images
     AUTO_INCREMENT = 1;
@@ -149,6 +152,13 @@ INSERT INTO point_histories(point_history_value, point_history_type, created_at,
 VALUES (10, "PURCHASE", '2024-05-08 10:06:05', 2);
 INSERT INTO point_histories(point_history_value, point_history_type, created_at, user_id)
 VALUES (-5, "CANCEL", '2024-05-08 11:30:05', 2);
+
+-- point policies
+INSERT INTO point_policies(policy_type, saving_point)
+VALUE
+( 'REVIEW_TEXT', 500 ),
+( 'REVIEW_PHOTO', 1000 ),
+( 'WELCOME', 100000 );
 
 -- 컴퓨터 공학 bestseller 1~50
 INSERT INTO `books`
