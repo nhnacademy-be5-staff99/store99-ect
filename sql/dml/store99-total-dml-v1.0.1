@@ -14287,7 +14287,17 @@ VALUES (1, 1),
 
 # order
 INSERT INTO consumers (consumer_id, consumer_name, consumer_email, consumer_phone, consumer_password, is_user) VALUES (4, '김땡땡', 'd@d.com', '01022223333', '1234', 1);
-INSERT INTO orders (order_id, order_name, order_type, order_at, order_transit_at, order_receiver_name, order_receiver_number, order_address, order_address_detail, order_address_code, order_delivery_cost, order_total_cost, order_use_point, order_final_cost, order_state, order_release_at, coupon_id, coupon_discount, consumer_id) VALUES ('939009b1-6461-471e-9b03-98d796f82305', '비전공자도 이해할 수 있는 AI 지식 (챗GPT 수록 개정판) - 챗GPT부터 유튜브 추천, 파파고 번역과 내비게이션까지 일상을 움직이는 인공지능 이해하기 외 6권', 'NON_USER', '2024-05-15 09:47:08', '2024-05-21', '김땡땡', '01022223333', '대전 동구 판교1길 3 (판암동)', '3층', 34672, 5000, 228060, null, 233060, 'PAYMENT_COMPLETED', null, null, null, 4);
+INSERT INTO orders (order_id, order_name, order_type, order_at, order_transit_at, order_receiver_name, order_receiver_number, order_address, order_address_detail, order_address_code, order_delivery_cost, order_total_cost, order_use_point, order_final_cost, order_state, order_release_at, coupon_id, coupon_discount, consumer_id) VALUES
+('939009b1-6461-471e-9b03-98d796f82305', '비전공자도 이해할 수 있는 AI 지식 (챗GPT 수록 개정판) - 챗GPT부터 유튜브 추천, 파파고 번역과 내비게이션까지 일상을 움직이는 인공지능 이해하기 외 6권', 'NON_USER', '2024-05-15 09:47:08', '2024-05-21', '김땡땡', '01022223333', '대전 동구 판교1길 3 (판암동)', '3층', 34672, 5000, 228060, null, 233060, 'PAYMENT_COMPLETED', null, null, null, 4),
+
+('739039b1-6461-451e-9b03-98d716f82305', '양자컴퓨터의 미래 - 양자컴퓨터 혁명은 세상을 어떻게 바꿀 것인가',
+'NON_USER', '2024-05-12 10:23:08', '2024-05-21', '김땡땡', '01022223344', '대전 동구 판교1길 3 (판암동)', '30층', 34672, 5000, 24800, null
+, 22320, 'PAYMENT_COMPLETED', null, null, null, 4),
+('839039b1-6461-451e-9b03-98d716f82306', '교양으로 읽는 반도체 상식 - 비즈니스로 보는 반도체의 과거, 현재, 미래','NON_USER', '2024-03-22 14:13:18', '2024-05-22', '김땡땡', '01022223345', '대전 동구 판교1길 3 (판암동)', '30층', 34672, 5000, 17000, null
+, 22320, 'PAYMENT_COMPLETED', null, null, null, 4);
+
+
+
 INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity, order_book_wrapper_cost, wrapper_id, book_id, order_id) VALUES (1, '비전공자도 이해할 수 있는 AI 지식 (챗GPT 수록 개정판) - 챗GPT부터 유튜브 추천, 파파고 번역과 내비게이션까지 일상을 움직이는 인공지능 이해하기', 53460, 3, null, null, 1, '939009b1-6461-471e-9b03-98d796f82305');
 INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity, order_book_wrapper_cost, wrapper_id, book_id, order_id) VALUES (2, '개발자 기술 면접 노트 - 18년 차 카카오 면접관의 빅테크 기업 취업/이직 가이드', 39600, 2, null, null, 2, '939009b1-6461-471e-9b03-98d796f82305');
 INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity, order_book_wrapper_cost, wrapper_id, book_id, order_id) VALUES (3, 'AI 2024 - 트렌드 & 활용백과', 39600, 2, null, null, 3, '939009b1-6461-471e-9b03-98d796f82305');
@@ -14295,4 +14305,15 @@ INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order
 INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity, order_book_wrapper_cost, wrapper_id, book_id, order_id) VALUES (5, '된다! 하루 만에 끝내는 챗GPT 활용법 - 글쓰기, 영어 공부, 유튜브, 수익 창출도 된다! 업무부터 자기 계발까지 활용 범위 넓히기, 전면 개정판', 15300, 1, null, null, 5, '939009b1-6461-471e-9b03-98d796f82305');
 INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity, order_book_wrapper_cost, wrapper_id, book_id, order_id) VALUES (6, '혼자 공부하는 컴퓨터 구조 + 운영체제 - 1:1 과외하듯 배우는 컴퓨터공학 자습서', 25200, 1, null, null, 6, '939009b1-6461-471e-9b03-98d796f82305');
 INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity, order_book_wrapper_cost, wrapper_id, book_id, order_id) VALUES (7, '컴퓨터 밑바닥의 비밀 - 컴퓨터 시스템의 본질을 알면 코드의 실마리가 보인다', 29700, 1, null, null, 7, '939009b1-6461-471e-9b03-98d796f82305');
+
+INSERT INTO order_book (order_book_id, order_book_title, order_book_price, order_book_quantity,
+order_book_wrapper_cost, wrapper_id, book_id, order_id)
+VALUES (11, '양자컴퓨터의 미래 - 양자컴퓨터 혁명은 세상을 어떻게 바꿀 것인가',
+22320, 6, null, null, 32, '739039b1-6461-451e-9b03-98d716f82305'),
+(12, '교양으로 읽는 반도체 상식 - 비즈니스로 보는 반도체의 과거, 현재, 미래',
+22320, 1, null, null, 34, '839039b1-6461-451e-9b03-98d716f82306');
+
+
+
+
 INSERT INTO payments (payment_key, order_id, payment_method, payment_response, payment_cost) VALUES ('tviva202405151847091d6r1', '939009b1-6461-471e-9b03-98d796f82305', '간편결제', '{"country":"KR","orderId":"939009b1-6461-471e-9b03-98d796f82305","cashReceipts":null,"isPartialCancelable":true,"lastTransactionKey":"403F8F02E7250825B3FE589B361B687A","discount":null,"taxExemptionAmount":0,"suppliedAmount":211873,"secret":"ps_4yKeq5bgrp2dnN5BAeMB3GX0lzW6","type":"NORMAL","cultureExpense":false,"taxFreeAmount":0,"requestedAt":"2024-05-15T18:47:09+09:00","currency":"KRW","paymentKey":"tviva202405151847091d6r1","virtualAccount":null,"checkout":{"url":"https:\\/\\/api.tosspayments.com\\/v1\\/payments\\/tviva202405151847091d6r1\\/checkout"},"orderName":"비전공자도 이해할 수 있는 AI 지식 (챗GPT 수록 개정판) - 챗GPT부터 유튜브 추천, 파파고 번역과 내비게이션까지 일상을 움직이는 인공지능 이해하기 외 6권","method":"간편결제","useEscrow":false,"vat":21187,"mId":"tvivarepublica","approvedAt":"2024-05-15T18:47:28+09:00","balanceAmount":233060,"version":"2022-11-16","easyPay":{"amount":233060,"provider":"토스페이","discountAmount":0},"totalAmount":233060,"cancels":null,"transfer":null,"mobilePhone":null,"failure":null,"receipt":{"url":"https:\\/\\/dashboard.tosspayments.com\\/receipt\\/redirection?transactionId=tviva202405151847091d6r1&ref=PX"},"giftCertificate":null,"cashReceipt":null,"card":null,"status":"DONE"}', 233060);
